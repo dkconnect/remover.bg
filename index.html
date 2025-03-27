@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg.remove - Free Background Remover</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="logo-circles">
+                <div class="circle black"></div>
+                <div class="circle red"></div>
+            </div>
+            <span>bg.remove</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Image Display (Before/After) -->
+            <div class="image-display">
+                <div class="image-box">
+                    <img id="beforeImage" src="placeholder-before.jpg" alt="Before">
+                </div>
+                <div class="image-box">
+                    <img id="afterImage" src="placeholder-after.jpg" alt="After">
+                </div>
+            </div>
+
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <div class="gradient-box">
+                    <h1>Free Background<br>Remove</h1>
+                    <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                    <button id="uploadButton" onclick="document.getElementById('imageInput').click()">Upload Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
